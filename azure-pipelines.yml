@@ -3,7 +3,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+- none
+parameters:
+  - name: description
+    displayName: description
+    type: string
 
 resources:
 - repo: self
